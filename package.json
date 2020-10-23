@@ -7,13 +7,19 @@
     "name": "Mikhail Mokrushin",
     "email": "mokrushin.ms@ya.ru"
   },
-  "homepage": "https://github.com/mishk0/slack-bot-api",
+  "contributors": [
+    {
+      "name": "Andhika Maheva Wicaksono",
+      "email": "andhikamaheva@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/andhikamaheva/slack-bot-api",
   "bugs": {
-    "url": "https://github.com/mishk0/slack-bot-api/issues"
+    "url": "https://github.com/andhikamaheva/slack-bot-api/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mishk0/slack-bot-api.git"
+    "url": "https://github.com/andhikamaheva/slack-bot-api"
   },
   "license": "MIT",
   "scripts": {
