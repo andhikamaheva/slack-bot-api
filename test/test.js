@@ -188,7 +188,6 @@ describe('slack-this.bot-api', function () {
       this.bot.getChannels.returns(vow.fulfill({ channels: [{ name: 'name1', id: 'C12345678', is_channel: true }] }))
 
       this.bot.getChannelById('C12345678').then(function (channel) {
-        expect(channel).to.be.ok
         expect(channel.name).to.equal('name1')
         cb()
       })
@@ -198,7 +197,6 @@ describe('slack-this.bot-api', function () {
       this.bot.getUsers.returns(vow.fulfill({ members: [{ name: 'name1', id: 'U12345678' }] }))
 
       this.bot.getUserById('U12345678').then(function (user) {
-        expect(user).to.be.ok
         expect(user.name).to.equal('name1')
         cb()
       })
@@ -208,7 +206,6 @@ describe('slack-this.bot-api', function () {
       this.bot.getGroups.returns(vow.fulfill({ groups: [{ name: 'name1', id: 'G12345678', is_group: true }] }))
 
       this.bot.getGroupById('G12345678').then(function (group) {
-        expect(group).to.be.ok
         expect(group.name).to.equal('name1')
         cb()
       })
@@ -231,8 +228,6 @@ describe('slack-this.bot-api', function () {
     })
 
     it('clean', function () {
-      var func = function () {}
-
       var input = 'general'
       var output = 'general'
 
