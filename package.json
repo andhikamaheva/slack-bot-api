@@ -19,6 +19,14 @@
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint index.js && ./node_modules/jscs/bin/jscs index.js && ./node_modules/mocha/bin/mocha"
   },
+  "standard": {
+    "ignore": [
+      "/node_modules/*"
+    ],
+    "env": [
+      "mocha"
+    ]
+  },
   "dependencies": {
     "extend": "^3.0.2",
     "lodash": "^4.17.15",
@@ -33,6 +41,7 @@
     "jshint": "^2.10.2",
     "mocha": "^6.2.0",
     "sinon": "^7.3.2",
-    "sinon-chai": "^3.3.0"
+    "sinon-chai": "^3.3.0",
+    "standard": "^15.0.0"
   }
 }
