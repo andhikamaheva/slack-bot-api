@@ -4,9 +4,15 @@
   "description": "Simple API for Slack",
   "main": "index.js",
   "author": {
-    "name": "Andhika Maheva Wicaksono",
-    "email": "andhikamaheva@gmail.com"
+    "name": "Mikhail Mokrushin",
+    "email": "mokrushin.ms@ya.ru"
   },
+  "contributors": [
+    {
+      "name": "Andhika Maheva Wicaksono",
+      "email": "andhikamaheva@gmail.com"
+    }
+  ],
   "homepage": "https://github.com/andhikamaheva/slack-bot-api",
   "bugs": {
     "url": "https://github.com/andhikamaheva/slack-bot-api/issues"

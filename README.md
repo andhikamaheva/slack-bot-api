@@ -52,33 +52,33 @@ npm install slackbots
 
 ## Usage
 ```js
-var SlackBot = require('slackbots');
+var SlackBot = require('slackbots')
 
 // create a bot
 var bot = new SlackBot({
     token: 'xoxb-012345678-ABC1DFG2HIJ3', // Add a bot https://my.slack.com/services/new/bot and put the token 
     name: 'My Bot'
-});
+})
 
 bot.on('start', function() {
     // more information about additional params https://api.slack.com/methods/chat.postMessage
     var params = {
         icon_emoji: ':cat:'
-    };
+    }
     
     // define channel, where bot exist. You can adjust it there https://my.slack.com/services 
-    bot.postMessageToChannel('general', 'meow!', params);
+    bot.postMessageToChannel('general', 'meow!', params)
     
     // define existing username instead of 'user_name'
-    bot.postMessageToUser('user_name', 'meow!', params); 
+    bot.postMessageToUser('user_name', 'meow!', params) 
     
     // If you add a 'slackbot' property, 
     // you will post to another user's slackbot channel instead of a direct message
-    bot.postMessageToUser('user_name', 'meow!', { 'slackbot': true, icon_emoji: ':cat:' }); 
+    bot.postMessageToUser('user_name', 'meow!', { 'slackbot': true, icon_emoji: ':cat:' }) 
     
     // define private group instead of 'private_group', where bot exist
-    bot.postMessageToGroup('private_group', 'meow!', params); 
-});
+    bot.postMessageToGroup('private_group', 'meow!', params) 
+})
 ```
 PROFIT!
 <img src="http://i.imgur.com/hqzTXHm.png" />
@@ -89,8 +89,8 @@ PROFIT!
  */
 bot.on('message', function(message) {
     // all ingoing events https://api.slack.com/rtm
-    console.log(message);
-});
+    console.log(message)
+})
 ```
 
 Reply incoming message:
@@ -100,17 +100,17 @@ Reply incoming message:
  */
 bot.on('message', function(message) {
     // all ingoing events https://api.slack.com/rtm
-    bot.reply(message, 'hi', function(data) {/* ... */});
-    bot.reply(message, 'hi', params, function(data) {/* ... */});
-});
+    bot.reply(message, 'hi', function(data) {/* ... */})
+    bot.reply(message, 'hi', params, function(data) {/* ... */})
+})
 ```
 
 ### Response Handler
 
 The simplest way for handling response is callback function, which is specified as a last argument:
 ```js
-bot.postMessageToUser('user1', 'hi', function(data) {/* ... */});
-bot.postMessageToUser('user1', 'hi', params, function(data) {/* ... */});
+bot.postMessageToUser('user1', 'hi', function(data) {/* ... */})
+bot.postMessageToUser('user1', 'hi', params, function(data) {/* ... */})
 ```
 
 But also you can use promises.
