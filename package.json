@@ -1,18 +1,12 @@
 {
-  "name": "slackbots",
-  "version": "1.2.0",
+  "name": "slackbot-sdk",
+  "version": "1.0.0",
   "description": "Simple API for Slack",
   "main": "index.js",
   "author": {
-    "name": "Mikhail Mokrushin",
-    "email": "mokrushin.ms@ya.ru"
+    "name": "Andhika Maheva Wicaksono",
+    "email": "andhikamaheva@gmail.com"
   },
-  "contributors": [
-    {
-      "name": "Andhika Maheva Wicaksono",
-      "email": "andhikamaheva@gmail.com"
-    }
-  ],
   "homepage": "https://github.com/andhikamaheva/slack-bot-api",
   "bugs": {
     "url": "https://github.com/andhikamaheva/slack-bot-api/issues"
